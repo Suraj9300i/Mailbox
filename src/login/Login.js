@@ -4,8 +4,26 @@ import mailbox from "./mailbox.png";
 import { FcGoogle } from "react-icons/fc";
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
+import { signInWithGoogle } from "../firebase";
+import { useEffect } from "react";
+import { auth } from "../firebase";
+import { signInUser, signOutUser } from "../redux/action";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
+  let dispatch = useDispatch();
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user === null) {
+        dispatch(signOutUser());
+        return;
+      }
+      let { displayName, email, photoURL, uid } = user.multiFactor.user;
+      dispatch(signInUser({ displayName, email, photoURL, uid }));
+    });
+  }, []);
+
   return (
     <div className="LoginScreen">
       <div className="LoginBox">
@@ -18,7 +36,14 @@ const Login = () => {
             <input className="input" type="text" placeholder="Email"></input>
             <input className="input" type="text" placeholder="Password"></input>
             <div className="LoginBox__main-socialmedia">
-              <FcGoogle></FcGoogle>
+              <span
+                onClick={(e) => {
+                  signInWithGoogle();
+                }}
+              >
+                <FcGoogle></FcGoogle>
+              </span>
+
               <BsGithub />
               <FaLinkedin />
             </div>
