@@ -6,3 +6,20 @@
 html {
   font-size: 62.5%;
 }
+
+:root {
+  --light_gray_1: #f1eeea;
+  --light_gray_2: #d1c5ba;
+  --light_gray_3: #c9b9af;
+  --light_gray_4: #aaa6a3;
+  --sexy_black: #3b3637;
+  --light_skyblue: #aac1d4;
+  --dark_skyblue: #6ea2ad;
+  --sexy_red: #ce4450;
+}
+
+/* font-family: 'EB Garamond', serif;
+font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Noto Sans Display', sans-serif;
+font-family: 'Playfair Display SC', serif;
+font-family: 'Roboto', sans-serif; */
