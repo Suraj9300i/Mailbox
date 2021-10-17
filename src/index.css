@@ -8,14 +8,13 @@ html {
 }
 
 :root {
-  --light_gray_1: #f1eeea;
-  --light_gray_2: #d1c5ba;
-  --light_gray_3: #c9b9af;
-  --light_gray_4: #aaa6a3;
+  --sidebar_background: #f5f8fa;
+  --email_background: #f6f7f2;
+  --light_skyblue: #27b8ec;
+  --light_gray: #adadad;
   --sexy_black: #3b3637;
-  --light_skyblue: #aac1d4;
-  --dark_skyblue: #6ea2ad;
-  --sexy_red: #ce4450;
+  --sexy_red: #ff5f5f;
+  --sexy_blue: #091353;
 }
 
 /* font-family: 'EB Garamond', serif;

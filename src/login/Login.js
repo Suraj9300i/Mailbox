@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { auth } from "../firebase";
 import { signInUser, signOutUser } from "../redux/action";
 import { useDispatch } from "react-redux";
+import { Redirect } from "react-router";
 
 const Login = () => {
   let dispatch = useDispatch();
@@ -39,6 +40,7 @@ const Login = () => {
               <span
                 onClick={(e) => {
                   signInWithGoogle();
+                  <Redirect to="/home"></Redirect>;
                 }}
               >
                 <FcGoogle></FcGoogle>

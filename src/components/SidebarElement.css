@@ -1,0 +1,43 @@
+.SidebarElement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.SidebarElement-active {
+  background-color: white;
+  border-left: 6px solid var(--light_skyblue);
+  font-weight: 600;
+  transition: all 0.1s;
+}
+.SidebarElement-active p {
+  color: var(--sexy_black);
+}
+.SidebarElement-active svg {
+  color: var(--light_skyblue);
+}
+.SidebarElement__main {
+  display: flex;
+  align-items: center;
+}
+.SidebarElement__main svg {
+  height: 21px;
+  width: 21px;
+  margin-right: 1.6rem;
+}
+.SidebarElement__main p {
+  font-size: 1.6rem;
+}
+.notification {
+  height: 2rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sexy_red);
+  border-radius: 100px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+}

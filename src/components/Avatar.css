@@ -1,0 +1,10 @@
+.Avatar {
+  height: 50px;
+  width: 50px;
+}
+.Avatar_wrapper,
+.Avatar_wrapper img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}

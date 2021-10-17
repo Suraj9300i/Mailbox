@@ -1,0 +1,62 @@
+.Sidebar {
+  font-family: "Noto Sans Display", sans-serif;
+}
+.Sidebar__Header {
+  display: grid;
+  grid-template-columns: auto 4rem;
+}
+.Sidebar__Header-UserBox {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.Sidebar__Header-UserBox h2 {
+  font-size: 1.6rem;
+  color: var(--sexy_blue);
+  margin-left: 8px;
+}
+
+.Sidebar__Header-UserBox p {
+  font-size: 1.1rem;
+  color: var(--sexy_blue);
+  margin-left: 8px;
+}
+
+.Sidebar__Header-logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Sidebar__Header-logout svg {
+  height: 30px;
+  width: 30px;
+  color: #091353;
+}
+
+.Sidebar_Folders {
+  margin-top: 3rem;
+}
+
+.Sidebar_Folders h1 {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.ComposeButton {
+  cursor: pointer;
+  padding: 8px 5rem;
+  font-size: 1.3rem;
+  background-color: var(--sexy_red);
+  color: white;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 3rem;
+  left: 4rem;
+  box-shadow: 3px 10px 13px -4px #ff5f5f9c;
+}
