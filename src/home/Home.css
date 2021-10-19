@@ -3,16 +3,21 @@
   width: 100vw;
   display: grid;
   grid-template-columns: 18% 31% auto;
+  box-sizing: content-box;
+  position: relative;
 }
 .Home__sidebar {
-  height: 100%;
+  height: 100vh;
   background-color: var(--sidebar_background);
+  box-sizing: content-box;
 }
 .Home__emails {
-  height: 100%;
+  height: 100vh;
   background-color: var(--email_background);
+  box-sizing: content-box;
 }
 .Home__readEmail {
   height: 100%;
   background-color: white;
+  box-sizing: content-box;
 }

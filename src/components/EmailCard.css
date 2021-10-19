@@ -1,0 +1,50 @@
+.EmailCard {
+  width: 94%;
+  padding: 1rem;
+  margin: 2rem 0;
+  box-sizing: content-box;
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.EmailCard-Avatar {
+  margin-right: 1rem;
+}
+.EmailCard-Email {
+}
+.Email__Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Email__Header-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Noto Sans Display", sans-serif;
+}
+.Email__Header-date {
+  font-size: 11px;
+  font-weight: 600;
+}
+.Email__Header-day {
+  margin-right: 1rem;
+}
+.Email__Header-time {
+}
+.Email__Body {
+}
+.Email__Body-Subject {
+  font-size: 1.4rem;
+  font-family: "Noto Sans Display", sans-serif;
+  margin: 3px 0;
+}
+.Email__Body-Message {
+  font-size: 11px;
+  line-height: 15px;
+  word-spacing: 3px;
+  color: #746d69;
+}

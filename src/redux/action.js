@@ -10,3 +10,15 @@ export const signOutUser = () => {
     type: "SIGNoutUSER",
   };
 };
+
+export const openCompose = () => {
+  return {
+    type: "OPENCOMPOSE",
+  };
+};
+
+export const closeCompose = () => {
+  return {
+    type: "CLOSECOMPOSE",
+  };
+};

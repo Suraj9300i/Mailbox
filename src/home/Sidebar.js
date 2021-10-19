@@ -10,10 +10,13 @@ import { FiGrid } from "react-icons/fi";
 import { signOutWithGoogle } from "../firebase";
 import { useSelector } from "react-redux";
 import SidebarElement from "../components/SidebarElement";
+import { useDispatch } from "react-redux";
+import { openCompose } from "../redux/action";
 
 const Sidebar = () => {
   let [selectSidebar, setSelectSidebar] = useState("Inbox");
   const user = useSelector((state) => state.user);
+  const dispatch = useDispatch();
   return (
     <div className="Sidebar">
       {/* -------------- Header -------------------------- */}
@@ -138,7 +141,14 @@ const Sidebar = () => {
       </div>
 
       {/* -------------- Folders -------------------------- */}
-      <div className="ComposeButton">Compose</div>
+      <div
+        className="ComposeButton"
+        onClick={(e) => {
+          dispatch(openCompose());
+        }}
+      >
+        Compose
+      </div>
     </div>
   );
 };

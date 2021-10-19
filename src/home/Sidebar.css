@@ -1,5 +1,6 @@
 .Sidebar {
   font-family: "Noto Sans Display", sans-serif;
+  box-sizing: content-box;
 }
 .Sidebar__Header {
   display: grid;
@@ -59,4 +60,8 @@
   bottom: 3rem;
   left: 4rem;
   box-shadow: 3px 10px 13px -4px #ff5f5f9c;
+}
+.ComposeButton:hover {
+  background-color: rgb(240, 52, 52);
+  box-shadow: 4px 10px 13px 0px #ff5f5f9c;
 }

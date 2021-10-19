@@ -1,0 +1,91 @@
+.ReadEmail {
+  box-sizing: content-box;
+  padding: 2rem 2.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.ReadEmail__Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ReadEmail__Header-icons svg {
+  height: 25px;
+  width: 25px;
+  color: var(--light_gray);
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.ReadEmail__Header-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+.ReadEmail__Header-pages svg {
+  height: 25px;
+  width: 25px;
+  color: var(--light_gray);
+  cursor: pointer;
+}
+.EmailBox {
+  display: flex;
+  margin-top: 2rem;
+}
+.EmialBoxMain {
+  margin-left: 1rem;
+}
+.EmialBox-Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 1rem 1rem 0rem;
+}
+.mailer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mailer-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.mailer-email {
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+.mailer-time {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.EmialBox-Message {
+}
+.Message-Subject {
+  font-size: 1.6rem;
+  margin-bottom: 1.3rem;
+}
+.Message-Message {
+  font-size: 1.3rem;
+  line-height: 18px;
+  word-spacing: 3px;
+}
+.ReplyBox {
+  position: absolute;
+  bottom: 3rem;
+  width: 40%;
+  border: 1px solid var(--light_gray);
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+}
+.ReplyBox input {
+  padding: 1rem;
+  width: 85%;
+  border: none;
+  outline: none;
+}
+.ReplyBox svg {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+}

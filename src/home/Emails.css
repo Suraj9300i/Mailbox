@@ -1,0 +1,32 @@
+.Emails {
+  padding: 2rem 1rem;
+  height: 100%;
+  box-sizing: content-box;
+}
+.InputBox {
+  margin: 1rem auto;
+  padding: 0 1rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100px;
+}
+.InputBox svg {
+  height: 25px;
+  width: 25px;
+  color: var(--light_gray);
+}
+.InputBox input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  background-color: white;
+}
+.EmailsList {
+  height: 85%;
+  width: 100%;
+  overflow-y: scroll;
+}
