@@ -1,3 +1,13 @@
+.ReadEmailImage-Box {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ReadmailImage {
+  height: 300px;
+}
 .ReadEmail {
   box-sizing: content-box;
   padding: 2rem 2.5rem;
@@ -33,6 +43,7 @@
 }
 .EmialBoxMain {
   margin-left: 1rem;
+  width: 100%;
 }
 .EmialBox-Header {
   display: flex;
@@ -61,7 +72,7 @@
 }
 .Message-Subject {
   font-size: 1.6rem;
-  margin-bottom: 1.3rem;
+  margin: 1.3rem 0;
 }
 .Message-Message {
   font-size: 1.3rem;

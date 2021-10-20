@@ -6,7 +6,6 @@ import React from "react";
 
 function App() {
   let user = useSelector((state) => state.user);
-  console.log(user);
   return (
     <div className="App">{user === null ? <Login></Login> : <Home></Home>}</div>
   );

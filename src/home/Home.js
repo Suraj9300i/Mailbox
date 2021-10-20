@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import Compose from "../Compose";
+import Compose from "./Compose";
 import Emails from "./Emails";
 import "./Home.css";
 import ReadEmail from "./ReadEmail";

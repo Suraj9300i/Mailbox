@@ -3,13 +3,14 @@
   box-sizing: content-box;
 }
 .Sidebar__Header {
-  display: grid;
-  grid-template-columns: auto 4rem;
+  display: flex;
+  justify-content: space-between;
 }
 .Sidebar__Header-UserBox {
   display: flex;
   align-items: center;
   padding: 1rem;
+  width: 55%;
 }
 .Sidebar__Header-UserBox h2 {
   font-size: 1.6rem;

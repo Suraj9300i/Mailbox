@@ -15,6 +15,7 @@
   margin-right: 1rem;
 }
 .EmailCard-Email {
+  width: 100%;
 }
 .Email__Header {
   display: flex;

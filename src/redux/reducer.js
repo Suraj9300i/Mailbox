@@ -19,3 +19,14 @@ export const composeReducer = (state = false, action) => {
       return state;
   }
 };
+
+export const readmailReducer = (state = null, action) => {
+  switch (action.type) {
+    case "OPENreadmail":
+      return action.payload;
+    case "CLOSEreadmail":
+      return action.payload;
+    default:
+      return state;
+  }
+};

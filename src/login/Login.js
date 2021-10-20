@@ -7,7 +7,12 @@ import { BsGithub } from "react-icons/bs";
 import { signInWithGoogle } from "../firebase";
 import { useEffect } from "react";
 import { auth } from "../firebase";
-import { signInUser, signOutUser } from "../redux/action";
+import {
+  signInUser,
+  signOutUser,
+  closeReadmail,
+  closeCompose,
+} from "../redux/action";
 import { useDispatch } from "react-redux";
 import { Redirect } from "react-router";
 
@@ -22,6 +27,8 @@ const Login = () => {
       }
       let { displayName, email, photoURL, uid } = user.multiFactor.user;
       dispatch(signInUser({ displayName, email, photoURL, uid }));
+      dispatch(closeReadmail());
+      dispatch(closeCompose());
     });
   }, []);
 

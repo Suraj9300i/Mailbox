@@ -22,3 +22,17 @@ export const closeCompose = () => {
     type: "CLOSECOMPOSE",
   };
 };
+
+export const openReadmail = (email) => {
+  return {
+    type: "OPENreadmail",
+    payload: email,
+  };
+};
+
+export const closeReadmail = () => {
+  return {
+    type: "CLOSEreadmail",
+    payload: null,
+  };
+};

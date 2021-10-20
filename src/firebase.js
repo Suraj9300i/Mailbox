@@ -23,4 +23,6 @@ export const signOutWithGoogle = () => {
   auth.signOut();
 };
 
+export const db = firebase.firestore();
+
 export default firebase;

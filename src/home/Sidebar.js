@@ -13,6 +13,10 @@ import SidebarElement from "../components/SidebarElement";
 import { useDispatch } from "react-redux";
 import { openCompose } from "../redux/action";
 
+function trimName(name) {
+  return name.split(" ").slice(0, -1).join(" ");
+}
+
 const Sidebar = () => {
   let [selectSidebar, setSelectSidebar] = useState("Inbox");
   const user = useSelector((state) => state.user);
@@ -24,7 +28,7 @@ const Sidebar = () => {
         <div className="Sidebar__Header-UserBox">
           <Avatar src={user.photoURL}></Avatar>
           <div>
-            <h2>{user.displayName}</h2>
+            <h2>{trimName(user.displayName)}</h2>
             <p>{user.email}</p>
           </div>
         </div>
@@ -105,7 +109,7 @@ const Sidebar = () => {
           <FiGrid />
         </SidebarElement>
 
-        {/* -------------- Folders -------------------------- */}
+        {/* ---------------------- Folders -------------------------- */}
 
         <div className="Sidebar_Folders">
           <h1>Folders</h1>
@@ -140,7 +144,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* -------------- Folders -------------------------- */}
+      {/* ------------------------ Compose Button -------------------------- */}
       <div
         className="ComposeButton"
         onClick={(e) => {
